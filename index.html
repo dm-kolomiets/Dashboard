@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Dashboard</title>
+</head>
+<body>
+<div class="loader"></div>
+<div class="section">
+    <div class="layer-close"></div>
+<aside class="dashboard">
+    <div class="mobile-button"><span></span></div>
+    <div class="dashboard__inner">
+        <div class="dashboard__top">
+            <a class="dashboard__logo">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <ul class="dashboard__list">
+                <li class="dashboard__list__item">
+                    <div class="dashboard__list__icon">
+                        <img src="img/dash-1.svg" alt="">
+                    </div>
+                    <div class="dashboard__list__title">Dashboard</div>
+                </li>
+                <li class="dashboard__list__item">
+                    <div class="dashboard__list__icon">
+                        <img src="img/dash-2.svg" alt="">
+                    </div>
+                    <div class="dashboard__list__title">Product</div>
+                    <i></i>
+                </li>
+                <li class="dashboard__list__item active">
+                    <div class="dashboard__list__icon">
+                        <img src="img/dash-3.svg" alt="">
+                    </div>
+                    <div class="dashboard__list__title">Customers</div>
+                    <i></i>
+                </li>
+                <li class="dashboard__list__item">
+                    <div class="dashboard__list__icon">
+                        <img src="img/dash-4.svg" alt="">
+                    </div>
+                    <div class="dashboard__list__title">Income</div>
+                    <i></i>
+                </li>
+                <li class="dashboard__list__item">
+                    <div class="dashboard__list__icon">
+                        <img src="img/dash-5.svg" alt="">
+                    </div>
+                    <div class="dashboard__list__title">Promote</div>
+                    <i></i>
+                </li>
+                <li class="dashboard__list__item">
+                    <div class="dashboard__list__icon">
+                        <img src="img/dash-6.svg" alt="">
+                    </div>
+                    <div class="dashboard__list__title">Help</div>
+                    <i></i>
+                </li>
+            </ul>
+        </div>
+        <div class="dashboard__bottom">
+            <div class="manager">
+                <div class="manager__icon">
+                    <img src="img/evano.png" alt="">
+                </div>
+                <div class="manager__content">
+                    <div class="manager__content__title">Evano</div>
+                    <div class="manager__content__desc">Project Manager</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+    <main>
+        <div class="title">
+            <h1 class="h1">Hello Evano 👋🏼,</h1>
+        </div>
+        <div class="customers">
+            <div class="customers__top">
+                <div class="customers__content">
+                    <div class="customers__content__title h2">All Customers</div>
+                    <div class="customers__content__text">Active Members</div>
+                </div>
+                <form action="/" class="search__form">
+                    <div class="input__search">
+                        <button type="button" class="search__button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#7E7E7E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 21L16.65 16.65" stroke="#7E7E7E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <input id="search" class="input" type="text" placeholder="Search" name="search">
+                    </div>
+                </form>
+            </div>
+            <table class="customers__table">
+                <thead>
+                <tr>
+                    <td>Customer Name</td>
+                    <td>Company</td>
+                    <td>Phone Number</td>
+                    <td>Email</td>
+                    <td>Country</td>
+                    <td>Status</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td data-mobile-title="Customer Name">Jane Cooper</td>
+                    <td data-mobile-title="Company">Microsoft</td>
+                    <td data-mobile-title="Email"><a href="2255550118">(225) 555-0118</a></td>
+                    <td data-mobile-title="Phone Number"><a href="mailto:jane@microsoft.com">jane@microsoft.com</a></td>
+                    <td data-mobile-title="Country">United States</td>
+                    <td data-mobile-title="Status"><div class="customers__table__btn active">Active</div></td>
+                </tr>
+                <tr>
+                    <td data-mobile-title="Customer Name">Floyd Miles</td>
+                    <td data-mobile-title="Company">Yahoo</td>
+                    <td data-mobile-title="Email"><a href="2055550100">(205) 555-0100</a></td>
+                    <td data-mobile-title="Phone Number"><a href="mailto:floyd@yahoo.com">floyd@yahoo.com</a></td>
+                    <td data-mobile-title="Country">Kiribati</td>
+                    <td data-mobile-title="Status"><div class="customers__table__btn inactive">Inactive</div></td>
+                </tr>
+                <tr>
+                    <td data-mobile-title="Customer Name">Ronald Richards</td>
+                    <td data-mobile-title="Company">Adobe</td>
+                    <td data-mobile-title="Email"><a href="3025550107">(302) 555-0107</a></td>
+                    <td data-mobile-title="Phone Number"><a href="mailto:ronald@adobe.com">ronald@adobe.com</a></td>
+                    <td data-mobile-title="Country">Israel</td>
+                    <td data-mobile-title="Status"><div class="customers__table__btn inactive">Inactive</div></td>
+                </tr>
+                <tr>
+                    <td data-mobile-title="Customer Name">Marvin McKinney</td>
+                    <td data-mobile-title="Company">Tesla</td>
+                    <td data-mobile-title="Email"><a href="2525550126">(252) 555-0126</a></td>
+                    <td data-mobile-title="Phone Number"><a href="mailto:marvin@tesla.com">marvin@tesla.com</a></td>
+                    <td data-mobile-title="Country">Iran</td>
+                    <td data-mobile-title="Status"><div class="customers__table__btn active">Active</div></td>
+                </tr>
+                <tr>
+                    <td data-mobile-title="Customer Name">Jerome Bell</td>
+                    <td data-mobile-title="Company">Google</td>
+                    <td data-mobile-title="Email"><a href="6295550129">(629) 555-0129</a></td>
+                    <td data-mobile-title="Phone Number"><a href="mailto:jerome@google.com">jerome@google.com</a></td>
+                    <td data-mobile-title="Country">Réunion</td>
+                    <td data-mobile-title="Status"><div class="customers__table__btn active">Active</div></td>
+                </tr>
+                <tr>
+                    <td data-mobile-title="Customer Name">Kathryn Murphy</td>
+                    <td data-mobile-title="Company">Microsoft</td>
+                    <td data-mobile-title="Email"><a href="4065550120">(406) 555-0120</a></td>
+                    <td data-mobile-title="Phone Number"><a href="mailto:kathryn@microsoft.com">kathryn@microsoft.com</a></td>
+                    <td data-mobile-title="Country">Curaçao</td>
+                    <td data-mobile-title="Status"><div class="customers__table__btn active">Active</div></td>
+                </tr>
+                <tr>
+                    <td data-mobile-title="Customer Name">Jacob Jones</td>
+                    <td data-mobile-title="Company">Yahoo</td>
+                    <td data-mobile-title="Email"><a href="2085550112">(208) 555-0112</a></td>
+                    <td data-mobile-title="Phone Number"><a href="mailto:jacob@yahoo.com">jacob@yahoo.com</a></td>
+                    <td data-mobile-title="Country">Brazil</td>
+                    <td data-mobile-title="Status"><div class="customers__table__btn active">Active</div></td>
+                </tr>
+                <tr>
+                    <td data-mobile-title="Customer Name">Kristin Watson</td>
+                    <td data-mobile-title="Company">Facebook</td>
+                    <td data-mobile-title="Email"><a href="7045550127">(704) 555-0127</a></td>
+                    <td data-mobile-title="Phone Number"><a href="mailto:kristin@facebook.com">kristin@facebook.com</a></td>
+                    <td data-mobile-title="Country">Åland Islands</td>
+                    <td data-mobile-title="Status"><div class="customers__table__btn inactive">Inactive</div></td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="customers__bottom">
+                <div class="showing">Showing data 1 to 8 of  256K entries</div>
+                <ul class="pagination">
+                    <li class="pagination__arrow prev disable">
+                        <a href="#"></a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li class="dott">
+                        ...
+                    </li>
+                    <li>
+                        <a href="#">40</a>
+                    </li>
+                    <li class="pagination__arrow next">
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script defer src="js/jquery.min.js"></script>
+<script defer src="js/main.js"></script>
+</body>
+</html>
